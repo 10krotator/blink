@@ -142,7 +142,7 @@ function getDonateInfo(): Pick<
   'icon' | 'title' | 'description'
 > {
   const icon =
-    'https://ucarecdn.com/6e28d269-cc42-49f6-a586-41405fd56763/-/preview/1000x333/';
+    'https://ucarecdn.com/0952b984-8270-4914-83f5-3a39973e5b71/-/scale_crop/300x300/';
   const title = 'Solana to $10K';
   const description =
     'Engineer | Soylana manlet.';
