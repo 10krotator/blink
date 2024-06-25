@@ -18,9 +18,9 @@ import {
 import { prepareTransaction } from '../transaction-utils';
 
 const DONATION_DESTINATION_WALLET =
-  '3h4AtoLTh3bWwaLhdtgQtcC3a3Tokb8NJbtqR9rhp7p6';
-const DONATION_AMOUNT_SOL_OPTIONS = [1, 5, 10];
-const DEFAULT_DONATION_AMOUNT_SOL = 1;
+  'BHtJi2W9dZLacUF3yu4DKKyCt8Z5G8HDFEVFzcZUna5y';
+const DONATION_AMOUNT_SOL_OPTIONS = [0.1, 0.5, 1];
+const DEFAULT_DONATION_AMOUNT_SOL = 0.1;
 
 const app = new OpenAPIHono();
 
@@ -47,7 +47,7 @@ app.openapi(
           })),
           {
             href: `/api/donate/{${amountParameterName}}`,
-            label: 'Donate',
+            label: 'Send it summer Sol to $10K',
             parameters: [
               {
                 name: amountParameterName,
@@ -143,9 +143,9 @@ function getDonateInfo(): Pick<
 > {
   const icon =
     'https://ucarecdn.com/7aa46c85-08a4-4bc7-9376-88ec48bb1f43/-/preview/880x864/-/quality/smart/-/format/auto/';
-  const title = 'Donate to Alice';
+  const title = 'Solana to $10K';
   const description =
-    'Cybersecurity Enthusiast | Support my research with a donation.';
+    'Engineer | Soylana manlet.';
   return { icon, title, description };
 }
 async function prepareDonateTransaction(
